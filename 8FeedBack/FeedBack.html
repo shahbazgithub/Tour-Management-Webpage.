@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript">
+function myFun()
+{
+alert("Your data have been submitted!!!");
+}
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>form</title>
+
+
+<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+<link href="css/foody.css" rel="stylesheet" type="text/css" />
+<style>
+
+body {
+  background: url(SvnuN4M.png);
+  background-color: #e6e6e6;
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+div, textarea, input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 510px;
+  min-width: 324px;
+  margin: 50px auto 0px;
+  background-color: #fff;
+  border: 1px solid #cfcfcf;
+  border-bottom: 3px solid #ccc;
+}
+
+.row {
+  width: 100%;
+ /* margin: 0 1em .3em 0;*/
+  padding: 0 2.5em;
+  background: url() left -80px;
+  background-color:#888888;
+}
+.row.header {
+  padding: .1em .4em;
+ /* border-bottom: 1px solid #ccc;*/
+ 
+  color: #fff;
+}
+.row.body {
+  padding:.4em;
+}
+
+.pull-right {
+ /* float: right;*/
+  width:49%;
+    margin-left:2px;
+}
+
+.pull-left {
+  float: left;
+   width:49%;
+   margin-right:6px;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  display: inline-block;
+  font-weight: 100;
+  font-size: 1.5em;
+  color:#cccccc;
+  font-weight:bold;
+ /* border-bottom: 1px solid rgba(255, 255, 255, 0.3);*/
+  margin: 0 0 .1em 0;
+ /* padding: 0 0 0.4em 0;*/
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin: 1em 0 0.4em 0;
+}
+
+.btn {
+  font-size: 14px;
+  display: inline-block;
+  padding: .4em .1em;
+  margin: .4em 0 0;
+  color: #eae0ce;
+  border-width: 0 0 0 0;
+ /* border-bottom: 5px solid;*/
+  text-transform: uppercase;
+  background-color: #b3b3b3;
+  border-bottom-color: #8c8c8c;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+    cursor: pointer;
+	width: 100%;
+}
+.btn:hover {
+  background-color: #bfbfbf;
+}
+.btn.btn-submit {
+  background-color: #997840;
+  border-bottom-color: #374d78;
+}
+.btn.btn-submit:hover {
+  background-color: #5f7db6;
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+form ul li {
+  margin: 0 0 0.25em 0;
+/*  clear: both;*/
+  display: inline-block;
+  width: 100%;
+}
+form ul li:last-child {
+  margin: 0;
+}
+form ul li p {
+ /* margin: 0;*/
+  padding: 0;
+ /* float: left;*/
+   margin: .4em 0 0;
+     padding: 4px 8px;
+  
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE0MGMwNCIgc3RvcC1vcGFjaXR5PSIwLjM1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwYTA5MDkiIHN0b3Atb3BhY2l0eT0iMC4zMyIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(top,  rgba(20,12,4,0.35) 0%, rgba(10,9,9,0.33) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(20,12,4,0.35)), color-stop(100%,rgba(10,9,9,0.33)));
+
+background: -webkit-linear-gradient(top,  rgba(20,12,4,0.35) 0%,rgba(10,9,9,0.33) 100%);
+
+background: -o-linear-gradient(top,  rgba(20,12,4,0.35) 0%,rgba(10,9,9,0.33) 100%);
+
+background: -ms-linear-gradient(top,  rgba(20,12,4,0.35) 0%,rgba(10,9,9,0.33) 100%);
+
+background: linear-gradient(to bottom,  rgba(20,12,4,0.35) 0%,rgba(10,9,9,0.33) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59140c04', endColorstr='#540a0909',GradientType=0 );
+
+
+
+
+
+
+}
+form ul li p.right {
+  float: right;
+}
+form ul li .divider {
+  margin: 0.5em 0 0.5em 0;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  display: block;
+  background-color: #4f6fad;
+  background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
+}
+form ul li .req {
+  color: #ee9cb4;
+}
+form label {
+	/*display: block;*/
+	/*margin: 0 0 0.5em 0;*/
+	margin:5px 5px 0px 0px;
+	color: #997840;
+	font-size: 14px;
+	/*font-family: 'Geo', sans-serif;*/
+	font-style:italic;
+	/*float:left;*/
+	
+}
+form input {
+  margin: .2em 0 0.5em 0;
+  border: 0px solid #000000;
+  padding: 5px 0px;
+  color: #999999;
+  font-size: 14px; 
+  background:transparent;
+
+
+ 
+}
+form textarea {
+  border: 0px solid #000000;
+  padding: 6px 0px;
+  width: 100%;
+  color: #999999;
+   font-size: 14px;
+  background:transparent;
+}
+form small {
+  color: #4f6fad;
+  margin: 0 0 0 0.5em;
+}
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none;
+	 width: 100%;
+  }
+  
+   .pull-left {
+    float: none;
+	 width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both;
+  }
+
+  li, p {
+    /*width: 100%;*/
+  }
+
+  input.btn {
+    margin: 1.5em 0 0.5em;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.125em;
+  }
+
+  li small {
+    display: none;
+  }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color:#333;
+}
+
+li {
+    float: right;
+	margin-top:30px;
+	padding:0 5px 0 5px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: cadetblue;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+                    
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+                    
+.dropdown-content a:hover {background-color: lightgrey;}
+                    
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+<ul>
+	<li style="float:left;padding:0;margin:0;"><img src="../images/Logo.png"/>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropdown">About Us</a>
+    <div class="dropdown-content">
+       <a href="../8FeedBack/Feedback.html">Feedback</a>
+       <a href="../7ContactUs/ContactUs.html">Contact Us</a>
+    </div>    
+    </li>
+    <li><a href="../6Login/login.html">Login / Signup</a></li>
+    <li><a href="../5Trips/plantrip.html">Trips</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Stay and Dine</a>
+    <div class="dropdown-content">
+       <a href="../2Hotels/hotels.html">Hotels</a>
+       <a href="../3Restaurants/restaurants.html">Restaurants</a>
+    <a href="../4Offers/Offers-final.html">Offers</a>
+    </div>
+    </li>
+    <li><a href="../1HomePage/Homepage.html">Home</a></li>
+</ul>
+<div class="container">
+  <div class="row header">
+    <h1>Feedback</h1>
+    
+  </div>
+  <div class="row body">
+    <form action="#">
+      <ul>
+        
+        <li class="pull-left">
+          <p>
+            <label for="user_name">Name</label>
+            <input type="text" name="x_name" size="24" placeholder="Jhon" />
+            </p>
+        <p>
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" name="x_email " size="24" placeholder="john.smith@gmail.com" />
+            </p>
+         
+         <p>
+            <label for="user_mobile">Mobile</label>
+            <input type="text" name="x_mobile" size="24" placeholder="+91" />     
+             
+          </p>
+        </li>
+       
+        <li class="pull-right">
+          <p>
+          <label for="comments">comments</label>
+          <textarea cols="55" rows="4" name="comments" placeholder="type your message here" wrap="off"></textarea>
+          </p>
+           <input type="button"class="submit"  value="Send e-mail" onclick="myFun()"/>
+        </li>
+        
+       
+        
+      </ul>
+    </form>  
+  </div>
+</div>
+
+</body></html>

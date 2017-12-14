@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<head>
+<script type="text/javascript">
+function myFun()
+{
+alert("Your data have been submitted!!!");
+}
+</script>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0  
+}
+body {
+  background: url(winter-cold-sunlight-peaceful.jpg);
+  color: black;
+}
+#contact {
+  overflow: auto;
+}
+#contact #form {
+  width:410px;
+  float:left;
+}
+#contact #form h2 {
+  font: 48px 'Bree Serif', Georgia, serif;
+}
+#contact #form span {
+  display:block;
+  float:left;
+  width:100px;
+  padding-top:5px;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+#contact #form input {
+  float:left;
+  width:255px;
+  border:0px;
+  color:#F1F1F1;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;
+}
+#contact #form textarea {
+  float:left;
+  border:0px;
+  width:255px;
+  height:140px;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  color:#F1F1F1;
+  resize: none;
+}
+#contact #form input.name {
+  background:#222222 url(177370145f09fe433945815665aa214f80dbc6af.png) no-repeat 10px 8px;
+}
+#contact #form input.email {
+  background:#222222 url(177370138cc63992182149e9befabff3eafa6d23.png) no-repeat 10px 9px;
+}
+#contact #form input.mobile {
+  background:#222222 url() no-repeat 10px 9px;
+}
+#contact #form textarea.message {
+  background:#222222 url(1773701229ed8c2f465a8274623ca8976adaf196.png) no-repeat 10px 8px;
+}
+#contact #form input.submit {
+  cursor: pointer;
+  width:85px;
+  height:30px;
+  float:right;
+  padding:0px 0px 5px 0px;
+  margin:10px 16px 0px 0px;
+  background:#222222;
+  color:#F1F1F1;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+#contact #mobile span{
+  width: 44px;
+, serif
+}
+#contact #mobile input{
+  background: url() no-repeat scroll 0 0 transparent;
+  margin: 5px 0 0;
+  padding: 0;
+
+  border: medium none;
+  cursor: pointer;
+  width: 15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color:#333;
+}
+
+li {
+    float: right;
+	margin-top:30px;
+	padding:0 5px 0 5px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: cadetblue;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+                    
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+                    
+.dropdown-content a:hover {background-color: lightgrey;}
+                    
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+</style>
+</head>
+ </script>
+
+
+
+<body>
+<ul>
+	<li style="float:left;padding:0;margin:0;"><img src="../images/Logo.png"/>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropdown">About Us</a>
+    <div class="dropdown-content">
+       <a href="../8FeedBack/Feedback.html">Feedback</a>
+       <a href="../7ContactUs/ContactUs.html">Contact Us</a>
+    </div>    
+    </li>
+    <li><a href="../6Login/login.html">Login / Signup</a></li>
+    <li><a href="../5Trips/plantrip.html">Trips</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Stay and Dine</a>
+    <div class="dropdown-content">
+       <a href="../2Hotels/hotels.html">Hotels</a>
+       <a href="../3Restaurants/restaurants.html">Restaurants</a>
+    <a href="../4Offers/Offers-final.html">Offers</a>
+    </div>
+    </li>
+    <li><a href="../1HomePage/Homepage.html">Home</a></li>
+</ul>
+<center>
+<section id="contact" style="margin-top:100px;margin-left:500px;">
+						<div class="content">
+						<div id="form">
+							<form action="" id="contactForm" method="post">
+								<span>Name</span>
+								<input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 />
+								<span>Email</span>
+								<input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 />
+								<span>Mobile no</span>
+								<input type="text" name="mobile" class="mobile" maxlength="10" size="10" placeholder="+91" tabindex=3 />
+								<span>Message</span>
+								<textarea class="message" placeholder="Enter your message" tabindex=4></textarea>
+                                                                                                
+								<input type="button"class="submit"  value="Send" onclick="myFun()"/>
+							</form>
+						</div>
+						</section>
+						</form>  
+						</div>
+						</div>
+</center>						
+</body>
+</html>

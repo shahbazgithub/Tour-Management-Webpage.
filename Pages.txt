@@ -1,0 +1,53 @@
+                 List of All The Pages we are going to make
+
+Homepage
+Trips
+Ticket Booking
+--------------------
+Hotels
+Login
+Signup Page
+--------------------
+User Review
+Contact Us
+Feedback
+
+
+
+According To Teacher :
+
+Information Of a Place
+
+Planning a Vaccation
+
+Information About Hotels and Restaurants
+
+Options for Ticket Booking
+
+Login / Signup Pages
+
+User Reviews
+
+Places that can be visited
+
+
+
+Navbar :
+
+Home
+Stay and Dine
+        --Hotels
+        --Restaurants
+        --Offers
+Trips
+        --Plan A Trip
+        --Attractions
+        --Blogs
+        --Book Tickets
+Login/Signup
+++Queries+++
+        --User Reviews
+        --Feedback
+        --Contact Us
+
+        
