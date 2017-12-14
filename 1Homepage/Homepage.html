@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TourBuddy - Plan Your Next Trip</title>
+<style>
+body {
+	background-image:url("10.jpg");
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color:#333;
+}
+
+li {
+    float: right;
+	margin-top:30px;
+	padding:0 5px 0 5px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: cadetblue;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+                    
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+                    
+.dropdown-content a:hover {background-color: lightgrey;}
+                    
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+</style>
+</head>
+<body>
+<ul>
+	<li style="float:left;padding:0;margin:0;"><img src="../images/Logo.png"/>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropdown">About Us</a>
+    <div class="dropdown-content">
+       <a href="../8FeedBack/Feedback.html">Feedback</a>
+       <a href="../7ContactUs/ContactUs.html">Contact Us</a>
+    </div>    
+    </li>
+    <li><a href="../6Login/login.html">Login / Signup</a></li>
+    <li><a href="../5Trips/plantrip.html">Trips</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Stay and Dine</a>
+    <div class="dropdown-content">
+       <a href="../2Hotels/hotels.html">Hotels</a>
+       <a href="../3Restaurants/restaurants.html">Restaurants</a>
+    <a href="../4Offers/Offers-final.html">Offers</a>
+    </div>
+    </li>
+    <li><a href="../1Homepage/Homepage.html">Home</a></li>
+</ul>
+<center>
+<div class="Search" style="background-color:rgba(255,255,255,0.8);height: 300px;width: 60%;">	
+<p style="margin-top:160px;padding-top: 40px;font-family:Book Antiqua;font-size:25px;">Search your next holiday Destination</p>
+<form name="SearchPlaces">
+<input type="text" placeholder="Search Your Favourite Hotels or Places." style="margin-top:70px;padding-left:10px;height:30px;width:80%;font-size:15px;"/><br/>
+	<a href="#" class="sbutton">
+	<div class="sbutton" style="width:200px;height:45px;background-color:skyblue;float:right;margin-right:72px;margin-top:5px;">
+	<p style="color:white;font-size:20px;margin:10px;">Search</p>
+	</div>
+	</a>
+</form>
+</div>
+<table cellspacing="20" border="0" name="Holiday Offers" width="100%" style="margin-top:250px;">
+<caption><p style="font-size:24px;">Holiday Offers</p></caption>
+<tr>
+	<td height="350px" width="25%" background="../images/offers1.jpg" style="background-size:cover;"></td>
+	<td height="350px" width="25%" background="../images/offers20.jpg" style="background-size:cover;"></td>
+	<td height="350px" width="25%" background="../images/offers3.jpg" style="background-size:cover;"></td>
+	<td height="350px" width="25%" background="../images/offers4.jpg" style="background-size:cover;"></td>
+</tr>
+<tr style="text-align:center;font-size:20px;">
+	<td style="color:#ff0066;">Beach Holidays<br/><small>Starting at 6000</small></td>
+	<td style="color:#ff0066;">Hill Stations<br/><small>Starting at 7599</small></td>
+	<td style="color:#ff0066;">Historic Places<br/><small>Starting at 4000</small></td>
+	<td style="color:#ff0066;">Adventures<br/><small>Starting at 14500</small></td>
+</tr>
+</table>
+</center>
+<br/><br/>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hotels</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+	<style>
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color:#333;
+	}
+	li {
+		float: right;
+		margin-top:30px;
+		padding:0 5px 0 5px;
+	}
+	
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	
+	li a:hover {
+		background-color: cadetblue;
+	}
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	}
+						
+	.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	}
+						
+	.dropdown-content a:hover {background-color: lightgrey;}
+						
+	.dropdown:hover .dropdown-content {
+	display: block;
+	}
+	
+	.nav{
+	float:left;
+	}
+	table tr td{
+	width:50px ;
+	height:50px;
+	}
+	
+	</style>
+</head>
+
+<body onload="showDivs(1)">
+	<ul style="z-index:100;">
+	<li style="float:left;padding:0;margin:0;"><img src="../images/Logo.png"/>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropdown">About Us</a>
+    <div class="dropdown-content">
+       <a href="../8FeedBack/Feedback.html">Feedback</a>
+       <a href="../7ContactUs/ContactUs.html">Contact Us</a>
+    </div>    
+    </li>
+    <li><a href="../6Login/login.html">Login / Signup</a></li>
+    <li><a href="../5Trips/plantrip.html">Trips</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Stay and Dine</a>
+    <div class="dropdown-content">
+       <a href="../2Hotels/hotels.html">Hotels</a>
+       <a href="../3Restaurants/restaurants.html">Restaurants</a>
+    <a href="../4Offers/Offers-final.html">Offers</a>
+    </div>
+    </li>
+    <li><a href="../1Homepage/Homepage.html">Home</a></li>
+	</ul><br>
+	</div>
+</div>
+<center>
+
+<input type="text" id="TextBox1" Placeholder="Enter the destination" style="margin-top:50px;width:30%;font-size:15px;padding:5px;"/> 
+<button type="button" style="width:100px;height:34px;">Search</button>
+
+<h1 style="color:turquoise">Most visited places by our visitors</h1>
+<div class="col-md-4"></div>
+<div class="col-md-4"></div>
+  <img class="mySlides" src="g1.jfif" style="height:300px;width:90%">
+  <img class="mySlides" src="Hotel rambagh palace.jpeg" style="height:300px;width:90%">
+  <img class="mySlides" src="itc grand chola 1.jpg" style="height:300px;width:90%">
+  <img class="mySlides" src="The oberoi udaivillas.jpeg" style="height:300px;width:90%">
+  <img class="mySlides" src="Radisson blu atria.jpeg" style="height:300px;width:90%">
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+<br/><br/>
+<center> <h2> <font color="grey">Other popular hotels </font>
+</h2></center>
+<div class="mv">
+<table class="t1" border="1px glow" bordercolor="skyblue" cellpadding="2px" >
+<tr>
+<td>
+<img src="Umaid bhawan.jpeg" width="300" height="300">
+</td>
+<td>
+<img src="../Images/outer5.jpg" width="300" height="300">
+</td>
+<td>
+<img src="movenpick hotel.jpeg" width="300" height="300">
+</td>
+<td>
+<img src="../Images/outer2.jpg" width="300" height="300">
+</td>
+</tr>
+<tr>
+
+<h2>
+<td> <b> Umaid Bhawan palace</b> </td>
+<td> <b> Hotel Pyramida </b> </td>
+<td> <b> Hotel Movenpick </b> </td> 
+<td> <b> The Hilton </b> </td>
+</tr>
+<tr>
+<td>
+<img src="Itc grand chola.jpg" width="300" height="300">
+</td>
+<td>
+<img src="four seasons.jpeg" width="300" height="300">
+</td>
+<td>
+<img src="The leela.jpg" width="300" height="300">
+</td>
+<td>
+<img src="The tajmahal.jpeg" width="300" height="300">
+</td>
+</tr>
+<tr>
+<td> <b> ITC grand Chola </b> </td>
+<td> <b> Four Seasons </b></td>
+<td> <b> The Leela</b> </td>
+<td> <b>The Taj mahal palace </b> </td>
+</tr>
+<tr>
+<td>
+<img src="u1.jfif" width="300" height="300">
+</td>
+<td>
+<img src="hotel sofitel.jpeg" width="300" height="300">
+</td>
+<td>
+<img src="The zuri whitefield.jpeg" width="300" height="300">
+</td>
+<td>
+<img src="d1.jpeg" width="300" height="300">
+</td>
+</tr>
+<tr>
+<td> <b> The Oberoi Udaivillas </b> </td>
+<td> <b>  Hotel Sofitel </b></td>
+<td> <b> The Zuri whitefield</b> </td>
+<td> <b> The Taj</b> </td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

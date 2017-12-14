@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>signup</title>
+    <script src="Scripts/jquery-1.9.0.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <style>
+        body{
+ background:url(f1.jpeg);
+background-size:1380px 1200px;
+background-repeat:no-repeat;}
+        .form {
+    background-color:#171616;
+    padding:20px;
+    border-radius:30px;
+
+    position: absolute;
+    border:1px solid;
+   
+    margin-top:80px;
+    top: 25px;
+    right: 0px;
+    bottom: 500px;
+    left: 850px;
+    width: 380px;
+    height: 350px;
+   
+}
+.form-hover{
+ hover:right;
+ }
+        .f1 {
+    background-color:no-color;
+    padding:10px;
+    border-radius:10px;
+
+    position: absolute;
+    border:0px solid;
+   
+    margin-top:80px;
+    top: 15px;
+    right: 0;
+    bottom: 500px;
+    left: 20px;
+    width: 475px;
+    height: 325px;
+   
+}
+ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		//background-color:#333;
+	}
+	
+	li {
+		float: right;
+	}
+	
+	 ul li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+li a:hover {
+		background-color: grey;
+		opacity: 0.7;
+	}
+font:hover {
+		background-color: darkgreyarkgrey;
+		opacity: 1;
+}
+a
+{
+text-decoration:none;
+display:block;
+text-align:center;
+}.button {
+    background-color: royal blue;
+    border: none;
+    color: White;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+     cursor: pointer;
+	 text-decoration:none;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover {
+    background-color: royal blue; 
+    color: Darkred;}
+
+.button1 {
+    background-color: royal blue;
+    border: none;
+    color: White;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor:pointer;  
+text-decoration:none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button1:hover {
+    background-color: royal blue; 
+    color: #000080;}
+
+    </style>
+    <script type="text/javascript">
+	<!--
+function validateForm() {
+var a=document.forms["s9"]["fullname"].value
+   if (a == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+
+var b=document.forms["s9"]["email"].value
+   if (b == "") {
+        alert("Please fill the correct email");
+        return false;
+    }
+
+
+var c=document.forms["s9"]["pwd"].value
+   if (c == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+
+
+   var d = document.forms["s9"]["conf_pwd"].value
+   if (d == "") {
+        alert("Password must be filled");
+        return false;
+    }
+
+
+   var d = document.forms["s9"]["conf_pwd"].value
+if (d != c) {   
+        alert("Password does not match");
+        return false;
+    }
+var e=document.forms["s9"]["c1"].checked
+if(e==false)
+{
+alert("You have not accepted the terms and conditions");
+  return false;
+}
+else{
+alert("you have successfully signed up");
+window.location="http://www.tutorialspoint.com";
+}
+}
+//-->
+</script>
+</head>
+
+<body>
+    <div class="container">
+       <div class="toolbar">
+<ul>
+	<li><a href="../7ContactUs/ContactUs.html">Contact Us</a></li>
+	<li><a href="../8FeedBack/Feedback.html">Give Feedback</a></li>
+	<li><a href="../6Login/login.html" target="self">Login</a></li>
+	<li><a href="../5Trips/plantrip.html">Plan a Trip</a></li>
+	<li><a href="../2Hotels/hotels.html" target="self">Search Hotels</a></li>
+	<li><a href="../1Homepage/Homepage.html">Home</a></li>
+</ul><br>
+</div>
+</div>
+<br/><br/>
+         <form id="Signup" class="f1" runat="server" action="#"  method="post" padding="0px" >
+           <h3 style="color:white;margin-top:2px;">Login<span class="fa fa-lock"></span></h3>
+                 <div class="form-inline">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <span class="fa fa-user"></span>
+                </div>
+				
+                <input type="text" TextBox ID="TextBox1" Class="form-control" Placeholder="User name" required  runat="server"/>
+                     </div>
+                 </div>
+                 <div class="form-group">
+                     <div class="input-group">
+                         <div class="input-group-addon"><span class="fa fa-key"></span></div>
+                        <input type="password" TextBox ID="TextBox2" TextMode="Password" Class="form-control" Placeholder="Enter your password" runat="server" required/>
+                     </div>
+                 </div>
+				 <div class="btn">
+				 <button type="button" class="btn btn-success" onclick="myfun()" style="background-color:skyblue; ;" value="submit"runat="server" >
+				 Submit
+				 </button>
+				 <script>
+				 function myfun()
+				 {
+				 var f=document.forms["Signup"]["TextBox1"].value
+   if (f == "") {
+        alert("Enter the user name");
+        return false;
+    }
+	var g=document.forms["Signup"]["TextBox2"].value
+   if (g== "") {
+        alert("Enter the password");
+        return false;
+    }
+	alert("you have successfully logged in");
+	}
+	</script>
+            </div>
+            </div>
+			
+		<div class="o1">
+	<font color="white">
+			<h3>
+			OR</font>
+			<div class="link">
+			<a href="https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&osid=1&service=mail&ss=1&ltmpl=default&rm=false#identifier" class="button" target="parent">
+</h3>
+Login with Google 
+<img src="google+.png" height="25px" width="25px">
+</a>
+<a href="https://www.facebook.com/" class="button1" target="parent">
+<h2>
+Login with Facebook
+<img src="facebook.png" height="25px" width="25px">
+</a>
+</div>
+</div>
+</form>
+<form id="s9" class="form">
+<div class="col-md-4">
+<div class="container" style="width:300px; height:300px;">
+
+ <div >
+            <h3 style="color:white;margin-top:2px;">Create Account<span class="fa fa-pencil"></span></h3>
+                 <div class="form-group">
+                     <div class="input-group">
+                         <div class="input-group-addon"><span class="fa fa-user"></span></div>
+                         <input type="text" TextBox ID="fullname" Class="form-control" Placeholder="Enter User name" required  runat="server"/>
+                     </div>
+                 </div>
+                  <div class="form-group">
+                     <div class="input-group">
+                         <div class="input-group-addon"><span class="fa fa-envelope"></span></div>
+                        <input type="email" TextBox ID="email" TextMode="Email" Class="form-control" Placeholder="Enter your email id" required/>
+                     </div>
+                 </div>
+                 <div class="form-group">
+                     <div class="input-group">
+                         <div class="input-group-addon"><span class="fa fa-lock"></span></div>
+                        <input type="password" TextBox ID="pwd" TextMode="Password" Class="form-control" Placeholder="Enter your password"  required/>
+                     </div>
+                 </div>
+                 <div class="form-group">
+                     <div class="input-group">
+                         <div class="input-group-addon"><span class="fa fa-lock"></span></div>
+                        <input type="password" TextBox ID="conf_pwd" TextMode="Password" Class="form-control" Placeholder="Confirm your password"  required/>
+                     </div>
+                 </div>
+                 <div class="form-group" style="color:white">
+                      <input type="checkbox" CheckBox ID="c1"   required Value="01" /> I agree all terms and conditions
+                 </div>
+                 <div class="form-group" style="text-align:center">
+				  <input type="submit" class="btn btn-success" Button ID="sub" onclick="validateForm()" style="background-color:grey; border-color:grey;" value="submit" >
+				   <input  type="reset" class="btn btn-success"onclick="reset" style="background-color:grey; border-color:grey;" value="reset" >
+                 </div>   
+				 </div>
+				 </div>
+       </form>
+	   </div>
+	   </form>
+     </body>
+</html>
