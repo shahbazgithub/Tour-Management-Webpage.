@@ -1,2 +1,2 @@
 # Tour-Management-Webpage.
-Using this webpage we can book a trip anywhere in India or outside of India.
+Using this webpage we can book a trip in India or anywhere outside of India.
